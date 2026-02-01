@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating hearts -->
+  <div class="hearts"></div>
+
+  <!-- PAGE 1: Question -->
+  <section id="page1" class="page active">
+    <div class="container">
+      <h1 id="question">Will you be my Valentine? 💘</h1>
+      <div class="buttons">
+        <button class="yes" onclick="nextPage(2)">Yes 💖</button>
+        <button class="no" id="noBtn">No 🙄</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 2: Cute reaction -->
+  <section id="page2" class="page">
+    <div class="container">
+      <h1>Yayyyy 😍 You said YES!</h1>
+      <p>You make my heart so happy 💕</p>
+      <button onclick="nextPage(3)">Next ➡️</button>
+    </div>
+  </section>
+
+  <!-- PAGE 3: Photos + Reasons -->
+  <section id="page3" class="page">
+    <div class="container">
+      <h1>Here’s why I love you 🥰</h1>
+      <div class="photos">
+        <img src="assets/photo1.jpg" alt="Us 1">
+        <img src="assets/photo2.jpg" alt="Us 2">
+        <img src="assets/photo3.jpg" alt="Us 3">
+      </div>
+      <ul class="reasons">
+        <li>Thank you for always being there for me 😊</li>
+        <li>I miss you a lot ❤️</li>
+        <li>fid-dunya wal-akhirah.</li>
+      </ul>
+      <button onclick="nextPage(4)">Next ➡️</button>
+    </div>
+  </section>
+
+  <!-- PAGE 4: Music + Lyrics -->
+  <section id="page4" class="page">
+    <div class="container">
+      <h1>Special song for you 🎶</h1>
+      <audio id="song" controls>
+        <source src="assets/song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <div class="lyrics">
+        <p data-time="22">Teri in baarishon mein behti hi jaun main</p>
+        <p data-time="27">Jab tu hai paas mere, khud ko rok na paaun main</p>
+        <p data-time="32">Tu jo ye kar raha hai, sehna dushwaar hai</p>
+        <p data-time="38">Dil ne to haan kiya hai, hotho pe inkaar hai</p>
+        <p data-time="47">Ye jo mushkil se dil ko, salaamat rakha</p>
+        <p data-time="53">Isme aane du kya tujhko</p>
+        <p data-time="58">Toot jaayega dil, phir na jud paayega</p>
+        <p data-time="64">Issi baat ka dar hai mujhko</p>
+        <p data-time="68">Ke ho na jaaye pyaar tumse mujhe</p>
+        <p data-time="73">Kar dega barbaad ishq mujhe</p>
+        <p data-time="78">Ho na jaaye pyaar tumse mujhe</p>
+        <p data-time="83">Behad-beshumaar tumse</p>
+        <p data-time="96">Haari main, haari main tere saamne</p>
+        <p data-time="101">Haari main, haari main mere yaar ve</p>
+        <p data-time="106">Main to jal jaani ve teri aag mein</p>
+        <p data-time="111">Kar lu barbaadi main tere pyaar mein</p>
+      </div>
+       <!-- ADD THIS BUTTON -->
+    <button class="yes" onclick="nextPage(5)">Next ➡️</button>
+
+  </div>
+</section>
+    </div>
+  </section>
+
+  <!-- PAGE 5: Final surprise -->
+  <section id="page5" class="page">
+    <div class="container">
+      <h1>Zaihan ❤️</h1>
+      <p>Coming soon to meet you  ❤️</p>
+      <p>Can't wait for that day rehu .... ✨</p>
+      <p>Mere sbse Khubsurat ehsaas ho tm ... zara socho kitne khass ho tm ✨</p>
+    </div>
+  </section>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
